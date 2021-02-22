@@ -1,0 +1,26 @@
+.CVContainer {
+  background: url(/bg1.jpg) no-repeat center / cover;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.CVOrdered {
+  margin: 0 auto;
+  width: 780px;
+  text-align: center;
+}
+
+.text {
+  margin-bottom: 20px;
+  color: #4e6366;
+}
+
+@media screen and (max-width: 767px) {
+  .CVContainer {
+    padding: 40px 20px 45px;
+  }
+
+  .CVOrdered {
+    width: 100%;
+  }
+}

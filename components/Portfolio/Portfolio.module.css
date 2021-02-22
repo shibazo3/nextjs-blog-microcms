@@ -1,0 +1,44 @@
+.portfolioContainer {
+  background: #ddd;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.pfOrdered {
+  margin: 0 auto 40px;
+  max-width: 1148px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pfContent {
+  width: 200px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.pfContentImg {
+  width: 100%;
+}
+
+.pfTitle {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolioContainer {
+    padding: 40px 20px 45px;
+  }
+  .pfOrdered {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .pfContent {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+}

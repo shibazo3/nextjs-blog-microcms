@@ -1,0 +1,29 @@
+.postContainer {
+  background: #f8f8f8;
+  padding: 50px 30px 60px;
+  text-align: center;
+}
+
+.postOrdered {
+  margin: 0 auto 30px;
+  max-width: 1148px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.postButton {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .postContainer {
+    padding: 40px 20px 45px;
+  }
+
+  .postOrdered {
+    margin-bottom: 15px;
+    width: 100%;
+    justify-content: center;
+  }
+}

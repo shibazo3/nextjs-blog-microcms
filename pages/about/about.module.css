@@ -1,0 +1,22 @@
+.container {
+  margin: 0 auto;
+  padding: 60px 120px;
+  max-width: 1148px;
+}
+
+.heading1 {
+  margin: 10px 0 0;
+  font-size: 28px;
+  border-bottom: 2px solid #333;
+}
+
+.inner {
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 20px 15px;
+  }
+}

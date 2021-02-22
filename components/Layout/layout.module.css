@@ -1,0 +1,29 @@
+.headerLink {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuWrap {
+  margin: 0 auto;
+  width: 1192px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .menuWrap {
+    width: 100%;
+  }
+}
+
+.footer {
+  padding: 2rem;
+  background: #333;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
