@@ -47,7 +47,7 @@ const Header = (props) => {
           <Toolbar className={styles.menuWrap}>
             <Link href="/">
               <Typography variant="h6" className={classes.title}>
-                Next.jsブログ
+                Hello Next Blog
               </Typography>
             </Link>
             <div className={styles.menu}>
