@@ -11,7 +11,7 @@ export default function About(props) {
         <title>About</title>
         <meta
           name="description"
-          content="Next.jsのブログです。当サイトはNext.jsにまつわる情報を掲載しています。"
+          content="Hello Next Blogのaboutページです。管理人プロフィールを掲載しています。"
         />
       </Head>
       <section className={styles.container}>

@@ -18,7 +18,7 @@ export default function Home({ allPostsData }) {
         <title>TOP</title>
         <meta
           name="description"
-          content="Next.jsのサンプルブログです。フロントエンドについての記事を掲載しています。"
+          content="Hello Next Blogです。フロントエンドについての記事を掲載しています。"
         />
       </Head>
       <PostOrder
