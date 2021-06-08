@@ -15,11 +15,10 @@ const MainVisual = () => {
           alt=""
         />
         <div className={styles.catch}>
-          <h1 className={styles.catchHeading}>Next.js Sample Blog</h1>
+          <h1 className={styles.catchHeading}>Hello Next Blog</h1>
           <p className={styles.catchText}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-            sapiente porro voluptas perspiciatis ducimus maxime nemo recusandae
-            eos perferendis inventore?
+            This blog was made with Next.js, micro CMS, and Vercel. <br />
+            I'm aiming to improve the performance of websites.
           </p>
         </div>
       </div>

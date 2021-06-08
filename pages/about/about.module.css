@@ -14,6 +14,10 @@
   padding: 10px 0;
 }
 
+.text1 {
+  margin-top: 30px;
+}
+
 @media screen and (max-width: 767px) {
   .container {
     width: 100%;

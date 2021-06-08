@@ -4,7 +4,7 @@ import styles from "./layout.module.css";
 const Footer = () => {
   return (
     <>
-      <div className={styles.footer}>サンプルブログ</div>
+      <div className={styles.footer}>Hello Next Blog</div>
     </>
   );
 };
