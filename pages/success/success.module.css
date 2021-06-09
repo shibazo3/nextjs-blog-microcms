@@ -10,3 +10,11 @@
   font-size: 28px;
   border-bottom: 2px solid #333;
 }
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 15px 20px;
+    min-height: 300px;
+  }
+}
