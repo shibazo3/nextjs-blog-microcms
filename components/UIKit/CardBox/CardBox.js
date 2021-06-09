@@ -13,6 +13,7 @@ import Skeleton from "@material-ui/lab/Skeleton";
 
 const CardBox = (props) => {
   const body = props.body.slice(0, 48) + "...";
+  const url = `https://nextjs-blog-microcms.vercel.app/posts/${props.id}`;
 
   const [state, setState] = React.useState({
     open: false,
@@ -25,6 +26,7 @@ const CardBox = (props) => {
   const handleClick = (newState) => (e) => {
     e.preventDefault();
     setState({ open: true, ...newState });
+    navigator.clipboard.writeText(url);
   };
 
   const handleClose = () => {
