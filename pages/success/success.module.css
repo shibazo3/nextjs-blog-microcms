@@ -1,0 +1,12 @@
+.container {
+  margin: 0 auto;
+  padding: 60px 120px;
+  max-width: 1148px;
+  min-height: 400px;
+}
+
+.heading1 {
+  margin: 10px 0 20px;
+  font-size: 28px;
+  border-bottom: 2px solid #333;
+}
