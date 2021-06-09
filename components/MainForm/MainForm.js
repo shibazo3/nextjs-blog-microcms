@@ -9,7 +9,7 @@ const MainForm = () => {
     subject: "お問い合わせ",
     message: "",
     replyTo: "shibazou3@gmail.com",
-    accessKey: process.env.access_key,
+    accessKey: process.env.ACCESS_KEY,
   });
 
   const [response, setResponse] = useState({
