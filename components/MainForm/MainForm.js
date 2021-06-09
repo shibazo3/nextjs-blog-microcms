@@ -3,13 +3,16 @@ import styles from "./mainForm.module.css";
 import Router from "next/router";
 
 const MainForm = () => {
+  const key = process.env.ACCESS_KEY
+    ? process.env.ACCESS_KEY
+    : process.env.X_ACCESS_KEY;
   const [contact, setContact] = useState({
     name: "",
     email: "",
     subject: "お問い合わせ",
     message: "",
     replyTo: "shibazou3@gmail.com",
-    accessKey: "",
+    accessKey: key,
   });
 
   const [response, setResponse] = useState({
