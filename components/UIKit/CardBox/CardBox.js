@@ -9,11 +9,13 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Snackbar from "@material-ui/core/Snackbar";
+import QueryBuilderIcon from "@material-ui/icons/QueryBuilder";
 import Skeleton from "@material-ui/lab/Skeleton";
 
 const CardBox = (props) => {
   const body = props.body.slice(0, 48) + "...";
   const url = `https://nextjs-blog-microcms.vercel.app/posts/${props.id}`;
+  const date = new Date(props.date).toLocaleDateString();
 
   const [state, setState] = React.useState({
     open: false,
@@ -49,7 +51,13 @@ const CardBox = (props) => {
             />
             <CardContent className={styles.content}>
               <h3 className={styles.title}>{props.title}</h3>
-              <p className={styles.category}>{props.category}</p>
+              <div className={styles.info}>
+                <p className={styles.category}>{props.category}</p>
+                <QueryBuilderIcon className={styles.icon} />
+                <time datetime={date} className={styles.date}>
+                  {date}
+                </time>
+              </div>
               <p
                 className={styles.text}
                 dangerouslySetInnerHTML={{ __html: body }}

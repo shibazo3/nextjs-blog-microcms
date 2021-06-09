@@ -15,7 +15,7 @@ export default function Posts({ postData }) {
         <title>Posts detail</title>
         <meta
           name="description"
-          content={"Next.jsのサンプルブログです。" + postData.description}
+          content={"Hello Next Blogです。" + postData.description}
         />
       </Head>
       <section className={styles.container}>

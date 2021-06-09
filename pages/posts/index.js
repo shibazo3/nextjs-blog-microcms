@@ -16,10 +16,7 @@ export default function Posts({ allPostsData }) {
     <Layout>
       <Head>
         <title>Posts</title>
-        <meta
-          name="description"
-          content="Next.jsサンプルブログの投稿一覧です。"
-        />
+        <meta name="description" content="Hello Next Blogの投稿一覧です。" />
       </Head>
       <PostOrder
         blogs={allPostsData.contents}

@@ -35,6 +35,7 @@ const PostOrder = ({ blogs, pager, count, title }) => {
                   id={blog.id}
                   key={blog.id}
                   category={blog.category}
+                  date={blog.publishedAt}
                 />
               )
           )}
