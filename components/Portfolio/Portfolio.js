@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./Portfolio.module.css";
 import Button from "@material-ui/core/Button";
+import { Modal } from "../../components/index";
 
 const Portfolio = ({ portfolios, count }) => {
   const pfCount = portfolios.length;
