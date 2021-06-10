@@ -4,14 +4,16 @@ import { getAllPost } from "../lib/posts";
 
 export const getStaticProps = async () => {
   const allPostsData = await getAllPost("blog");
+  const allPortfolioData = await getAllPost("portfolio");
   return {
     props: {
       allPostsData,
+      allPortfolioData,
     },
   };
 };
 
-export default function Home({ allPostsData }) {
+export default function Home({ allPostsData, allPortfolioData }) {
   return (
     <Layout home>
       <Head>
@@ -27,7 +29,7 @@ export default function Home({ allPostsData }) {
         count={3}
         title={"NEW POSTS"}
       />
-      <Portfolio />
+      <Portfolio portfolios={allPortfolioData.contents} count={3} />
       <CVlink />
     </Layout>
   );
