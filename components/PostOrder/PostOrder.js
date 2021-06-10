@@ -6,6 +6,7 @@ import Button from "@material-ui/core/Button";
 
 const PostOrder = ({ blogs, pager, count, title }) => {
   let roadMore;
+  const originCount = count;
   if (pager) {
     roadMore = "";
   } else {
@@ -21,7 +22,9 @@ const PostOrder = ({ blogs, pager, count, title }) => {
   return (
     <>
       <section className={styles.postContainer}>
-        <h2 className="heading1">{title}</h2>
+        <h2 className="heading1" data-aos="fade-up">
+          {title}
+        </h2>
         <div className={styles.postOrdered}>
           {blogs.map(
             (blog) =>
@@ -36,6 +39,7 @@ const PostOrder = ({ blogs, pager, count, title }) => {
                   key={blog.id}
                   category={blog.category}
                   date={blog.publishedAt}
+                  order={-count + originCount}
                 />
               )
           )}

@@ -15,8 +15,18 @@ const MainVisual = () => {
           alt=""
         />
         <div className={styles.catch}>
-          <h1 className={styles.catchHeading}>Hello Next Blog</h1>
-          <p className={styles.catchText}>
+          <h1
+            data-aos="fade-right"
+            data-aos-duration="600"
+            className={styles.catchHeading}
+          >
+            Hello Next Blog
+          </h1>
+          <p
+            data-aos="fade-right"
+            data-aos-duration="600"
+            className={styles.catchText}
+          >
             This blog was made with Next.js, micro CMS, and Vercel. <br />
             I'm aiming to improve the performance of websites.
           </p>

@@ -16,6 +16,7 @@ const CardBox = (props) => {
   const body = props.body.slice(0, 48) + "...";
   const url = `https://nextjs-blog-microcms.vercel.app/posts/${props.id}`;
   const date = new Date(props.date).toLocaleDateString();
+  const aosDelay = props.order * 100;
 
   const [state, setState] = React.useState({
     open: false,
@@ -38,7 +39,12 @@ const CardBox = (props) => {
   return (
     <>
       <Link href={`/posts/${props.id}`}>
-        <Card className={styles.card}>
+        <Card
+          data-aos="fade-up"
+          data-aos-delay={aosDelay}
+          data-aos-once="false"
+          className={styles.card}
+        >
           <CardActionArea>
             <CardMedia
               className={styles.cardImg}

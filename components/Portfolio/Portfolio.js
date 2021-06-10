@@ -9,14 +9,23 @@ const Portfolio = ({ portfolios, count }) => {
   return (
     <>
       <section className={styles.portfolioContainer}>
-        <h2 className="heading1">MY PORTFOLIO</h2>
+        <h2 data-aos="fade-up" className="heading1">
+          MY PORTFOLIO
+        </h2>
         <div className={styles.pfOrdered}>
           {portfolios.map(
             (portfolio) =>
               count > 0 &&
               count-- && (
                 <>
-                  <div className={styles.pfContent} id={portfolio.id}>
+                  <div
+                    className={styles.pfContent}
+                    id={portfolio.id}
+                    key={portfolio.id}
+                    data-aos="fade-up"
+                    data-aos-delay={-count + 3 * 100}
+                    data-aos-once="false"
+                  >
                     <Image
                       className={styles.pfContentImg}
                       width={300}
