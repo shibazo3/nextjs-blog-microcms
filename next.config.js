@@ -5,6 +5,6 @@ module.exports = {
   },
   env: {
     X_API_KEY: process.env.X_API_KEY,
-    ACCESS_KEY: process.env.ACCESS_KEY,
+    X_ACCESS_KEY: process.env.X_ACCESS_KEY,
   },
 };
