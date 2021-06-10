@@ -6,6 +6,7 @@ const MainForm = () => {
   const key = process.env.ACCESS_KEY
     ? process.env.ACCESS_KEY
     : process.env.X_ACCESS_KEY;
+  console.log(key);
   const [contact, setContact] = useState({
     name: "",
     email: "",
