@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
+import Typed from "react-typed";
 import styles from "./mainVisual.module.css";
 
 const MainVisual = () => {
@@ -22,14 +22,16 @@ const MainVisual = () => {
           >
             Hello Next Blog
           </h1>
-          <p
-            data-aos="fade-right"
-            data-aos-duration="600"
+          <Typed
             className={styles.catchText}
-          >
-            This blog was made with Next.js, micro CMS, and Vercel. <br />
-            I'm aiming to improve the performance of websites.
-          </p>
+            strings={[
+              `This blog was made with Next.js, micro CMS, and Vercel. <br />I'm aiming to improve the performance of websites.`,
+            ]}
+            typeSpeed={20}
+            startDelay={500}
+            backDelay={2000}
+            loop
+          />
         </div>
       </div>
     </>
