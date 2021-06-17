@@ -25,7 +25,7 @@ const MainVisual = () => {
           <Typed
             className={styles.catchText}
             strings={[
-              `This blog was made with Next.js, micro CMS, and Vercel. <br />I'm aiming to improve the performance of websites.`,
+              `This blog is made with Next.js, micro CMS, and Vercel. <br />I'm aiming to improve the performance of websites.`,
             ]}
             typeSpeed={20}
             startDelay={500}
