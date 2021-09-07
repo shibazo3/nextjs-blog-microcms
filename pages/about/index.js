@@ -44,12 +44,12 @@ export default function About(props) {
           />
           <Table
             title="資格"
-            desc="HTML5プロフェッショナル認定試験 レベル1, TOEIC L&R TEST 785点"
+            desc="HTML5プロフェッショナル認定試験 レベル1, TOEIC L&R TEST 815点"
             delay={300}
           />
           <Table
             title="趣味"
-            desc="ドラム、お笑い、野球観戦（千葉ロッテファン）、旅行、お酒"
+            desc="ランニング、ドラム、お笑い、野球観戦（千葉ロッテファン）、旅行、お酒"
             delay={350}
           />
           <Table title="座右の銘" desc="It's never too late." delay={400} />
